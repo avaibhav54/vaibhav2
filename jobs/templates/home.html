@@ -1,7 +1,9 @@
 
 <!doctype html>
+
 <html lang="en">
   <head>
+    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -54,8 +56,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link " href="#">twitter </a>
-                <a class="nav-item nav-link" href="#">resume</a>
+                <a class="nav-item nav-link " href="https://www.instagram.com/agarwal__vaibhav__/">instagram </a>
+                <a class="nav-item nav-link" href="{% static 'VAIBHAV AGARWAL.pdf'%}">resume</a>
                 <a class="nav-item nav-link" href="#">blog</a>
               </div>
             </div>
@@ -71,6 +73,7 @@
       <p>
         <a href="mailto:agarwalvaibhav041@gmail.com" class="btn btn-primary my-2">email me</a>
       </p>
+      <img src="{% static 'me.jpeg' %}" height="3000"/>
     </div>
   </section>
 
