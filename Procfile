@@ -1,1 +1,1 @@
-web: gunicorn vaibhav2.wsgi
+web: python manage.py collectstatic --noinput;gunicorn vaibhav2.wsgi

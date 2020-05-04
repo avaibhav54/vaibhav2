@@ -138,3 +138,7 @@ MEDIA_URL='/media/'
 #>psql -U postgres postgres
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+try:
+    from .local_settings import *
+except ImportError:
+    pass
