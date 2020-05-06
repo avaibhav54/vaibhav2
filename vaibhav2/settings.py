@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'products.apps.ProductsConfig',
+    'accounts.apps.AccountsConfig',
     'blogs.apps.BlogsConfig',
     'jobs.apps.JobsConfig',
     'django.contrib.admin',
@@ -58,6 +60,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [R'C:\Users\Vaibhav Agarwal\projects\vaibhav2\jobs\templates'],
         'DIRS': [R'C:\Users\Vaibhav Agarwal\projects\vaibhav2\blogs\templates',],
+        'DIRS':['vaibhav2/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
 
@@ -128,6 +131,8 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'vaibhav2/static/')
 
 ]
+#s3 bucket config
+
 
 STATIC_ROOT=os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
